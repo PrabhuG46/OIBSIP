@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShieldVPN - Secure and Private Internet Access</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #1e40af;
+            --accent: #3b82f6;
+            --text: #1e293b;
+            --light: #f8fafc;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        }
+        
+        .feature-card {
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .pricing-card {
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .pricing-card.popular {
+            border-color: var(--accent);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800">
+    
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-shield-alt text-white text-xl"></i>
+                </div>
+                <span class="text-xl font-bold text-blue-600">ShieldVPN</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#features" class="text-slate-600 hover:text-blue-600 transition scroll-link">Features</a>
+                <a href="#pricing" class="text-slate-600 hover:text-blue-600 transition scroll-link">Pricing</a>
+                <a href="#faq" class="text-slate-600 hover:text-blue-600 transition scroll-link">FAQ</a>
+                <a href="#" class="text-slate-600 hover:text-blue-600 transition">Help</a>
+            </div>
+            
+            <div class="hidden md:block">
+                <a href="#pricing" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition shadow-sm">Get ShieldVPN</a>
+            </div>
+            
+            <button class="md:hidden text-slate-600">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    
+    <section class="gradient-bg text-white">
+        <div class="container mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Secure Your Internet Freedom with ShieldVPN</h1>
+                <p class="text-lg md:text-xl mb-8 opacity-90">Browse anonymously, access restricted content, and protect your data with military-grade encryption from just $3.99/month.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#pricing" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-opacity-90 transition text-center shadow-lg scroll-link">Get Started</a>
+                    <a href="#features" class="bg-transparent border-2 border-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:bg-opacity-10 transition text-center scroll-link">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="md:w-1/2 flex justify-center">
+                <img src="assets/vpn.jpg" class="rounded-lg shadow-xl" style="max-width: 100%">
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Why Choose ShieldVPN</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">Our mission is to provide fast, secure, and private internet access to everyone</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="feature-card bg-slate-50 p-8 rounded-xl">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-lock text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-4">Military-Grade Encryption</h3>
+                    <p class="text-slate-600">256-bit AES encryption keeps your online activity private and secure from hackers and surveillance.</p>
+                </div>
+                
+                
+                <div class="feature-card bg-slate-50 p-8 rounded-xl">
+                    <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-globe text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-4">Global Server Network</h3>
+                    <p class="text-slate-600">1500+ servers in 94 countries to ensure fast connections no matter where you are.</p>
+                </div>
+                
+                
+                <div class="feature-card bg-slate-50 p-8 rounded-xl">
+                    <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-tachometer-alt text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-4">Lightning Fast Speed</h3>
+                    <p class="text-slate-600">Optimized servers with unlimited bandwidth for buffer-free streaming and lag-free gaming.</p>
+                </div>
+                
+                
+                <div class="feature-card bg-slate-50 p-8 rounded-xl">
+                    <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-user-shield text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-4">No Logs Policy</h3>
+                    <p class="text-slate-600">We don't track or store your online activity. Your privacy is our top priority.</p>
+                </div>
+                
+                
+                <div class="feature-card bg-slate-50 p-8 rounded-xl">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-desktop text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-4">Cross-Platform</h3>
+                    <p class="text-slate-600">Protect all your devices with apps for Windows, Mac, iOS, Android, and routers.</p>
+                </div>
+                
+                
+                <div class="feature-card bg-slate-50 p-8 rounded-xl">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-headset text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-4">24/7 Support</h3>
+                    <p class="text-slate-600">Our team is available around the clock to help with any questions or issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Global Server Coverage</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">Connect to any of our high-speed servers worldwide</p>
+            </div>
+            
+            <img src="assets/map.jpg" alt="World map highlighting 94 countries with server locations marked with blue dots indicating global coverage" class="rounded-lg shadow-md mb-12 w-full">
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+                <div class="bg-white p-4 rounded-lg text-center shadow-sm">
+                    <div class="text-blue-600 mb-2">
+                        <i class="fas fa-flag-usa text-2xl"></i>
+                    </div>
+                    <h4 class="font-medium">United States</h4>
+                    <p class="text-sm text-slate-500">28 locations</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg text-center shadow-sm">
+                    <div class="text-blue-600 mb-2">
+                        <i class="fas fa-flag text-2xl"></i>
+                    </div>
+                    <h4 class="font-medium">United Kingdom</h4>
+                    <p class="text-sm text-slate-500">12 locations</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg text-center shadow-sm">
+                    <div class="text-blue-600 mb-2">
+                        <i class="fas fa-map-marker-alt text-2xl"></i>
+                    </div>
+                    <h4 class="font-medium">Japan</h4>
+                    <p class="text-sm text-slate-500">9 locations</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg text-center shadow-sm">
+                    <div class="text-blue-600 mb-2">
+                        <i class="fas fa-globe-americas text-2xl"></i>
+                    </div>
+                    <h4 class="font-medium">Australia</h4>
+                    <p class="text-sm text-slate-500">7 locations</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg text-center shadow-sm">
+                    <div class="text-blue-600 mb-2">
+                        <i class="fas fa-map-pin text-2xl"></i>
+                    </div>
+                    <h4 class="font-medium">Germany</h4>
+                    <p class="text-sm text-slate-500">14 locations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="pricing" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Simple, Transparent Pricing</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">Choose the plan that works best for you. All plans come with a 30-day money-back guarantee.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                
+                <div class="pricing-card bg-slate-50 p-8 rounded-xl">
+                    <div class="mb-6">
+                        <h3 class="text-xl font-bold text-slate-800">Monthly</h3>
+                        <p class="text-slate-600 mb-4">Best for temporary use</p>
+                        <p class="text-4xl font-bold text-slate-800">$11.99<span class="text-lg font-normal text-slate-600">/month</span></p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Unlimited bandwidth</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>5 devices</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>All server locations</span>
+                        </li>
+                        <li class="flex items-center text-slate-400">
+                            <i class="fas fa-times text-red-400 mr-2"></i>
+                            <span>Premium features</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded-lg font-medium hover:bg-blue-700 transition">Get Monthly Plan</button>
+                </div>
+                
+                
+                <div class="pricing-card popular bg-slate-50 p-8 rounded-xl relative">
+                    <div class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">POPULAR</div>
+                    <div class="mb-6">
+                        <h3 class="text-xl font-bold text-slate-800">Yearly</h3>
+                        <p class="text-slate-600 mb-4">Best value - save 70%</p>
+                        <p class="text-4xl font-bold text-slate-800">$3.99<span class="text-lg font-normal text-slate-600">/month</span></p>
+                        <p class="text-sm text-slate-500">Billed $47.88 annually</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Unlimited bandwidth</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>10 devices</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>All server locations</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Premium features</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded-lg font-medium hover:bg-blue-700 transition">Get Yearly Plan</button>
+                </div>
+                
+                
+                <div class="pricing-card bg-slate-50 p-8 rounded-xl">
+                    <div class="mb-6">
+                        <h3 class="text-xl font-bold text-slate-800">Business</h3>
+                        <p class="text-slate-600 mb-4">For teams of 5+ users</p>
+                        <p class="text-4xl font-bold text-slate-800">$7.99<span class="text-lg font-normal text-slate-600">/month</span></p>
+                        <p class="text-sm text-slate-500">Per user, billed annually</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Unlimited bandwidth</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>20 devices</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>All server locations</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Premium features</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Dedicated account manager</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded-lg font-medium hover:bg-blue-700 transition">Get Business Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4">What Our Users Say</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">Trusted by over 2 million users worldwide</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Alex Johnson</h4>
+                            <p class="text-sm text-slate-500">Freelance Journalist</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 mb-4">"As someone who works in sensitive regions, ShieldVPN has been essential for protecting my communications and research. The speeds are consistently excellent across different countries."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-purple-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Sarah Chen</h4>
+                            <p class="text-sm text-slate-500">Digital Nomad</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 mb-4">"I've tried multiple VPN services and ShieldVPN is by far the most reliable. Whether I'm in Thailand or Turkey, it just works without slowing down my connection noticeably."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-green-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Michael Rodriguez</h4>
+                            <p class="text-sm text-slate-500">IT Security Professional</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 mb-4">"The transparency of their no-logs policy and their commitment to security audits made me choose ShieldVPN for my personal devices. Professional grade protection at consumer prices."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="faq" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Frequently Asked Questions</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">Find answers to common questions about ShieldVPN</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto divide-y divide-slate-200">
+                
+                <div class="py-6">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-lg font-medium text-slate-800">What is a VPN and why do I need one?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </div>
+                    <div class="mt-3 text-slate-600 hidden">
+                        <p>A VPN (Virtual Private Network) creates a secure, encrypted connection between your device and the internet. It protects your online privacy by hiding your IP address and encrypting internet traffic. You need a VPN to:</p>
+                        <ul class="list-disc pl-5 mt-2 space-y-1">
+                            <li>Secure your data on public Wi-Fi</li>
+                            <li>Prevent tracking by ISPs and advertisers</li>
+                            <li>Access content that might be restricted in your location</li>
+                            <li>Protect your privacy from snoopers and hackers</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+                <div class="py-6">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-lg font-medium text-slate-800">Is ShieldVPN really secure?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </div>
+                    <div class="mt-3 text-slate-600 hidden">
+                        <p>Yes, ShieldVPN uses military-grade 256-bit AES encryption - the same standard used by governments and security experts worldwide. We have a strict no-logs policy that has been independently audited. Our apps also include a kill switch to prevent data leaks if the VPN connection drops unexpectedly.</p>
+                    </div>
+                </div>
+                
+                
+                <div class="py-6">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-lg font-medium text-slate-800">How many devices can I use with ShieldVPN?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </div>
+                    <div class="mt-3 text-slate-600 hidden">
+                        <p>The number of simultaneous connections depends on your subscription plan:</p>
+                        <ul class="list-disc pl-5 mt-2 space-y-1">
+                            <li><strong>Monthly:</strong> 5 devices</li>
+                            <li><strong>Yearly:</strong> 10 devices</li>
+                            <li><strong>Business:</strong> 20 devices per user</li>
+                        </ul>
+                        <p class="mt-2">You can install ShieldVPN on as many devices as you own, but can only be actively connected on the specified number simultaneously.</p>
+                    </div>
+                </div>
+                
+                
+                <div class="py-6">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-lg font-medium text-slate-800">Will ShieldVPN slow down my internet?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </div>
+                    <div class="mt-3 text-slate-600 hidden">
+                        <p>VPN encryption does add some overhead, but with ShieldVPN you'll rarely notice the difference. Our network is optimized for speed with:</p>
+                        <ul class="list-disc pl-5 mt-2 space-y-1">
+                            <li>10 Gbps+ server connections</li>
+                            <li>Smart routing to find the fastest server</li>
+                            <li>WireGuard protocol support for fastest speeds</li>
+                            <li>Unlimited bandwidth</li>
+                        </ul>
+                        <p class="mt-2">Most users actually report faster speeds in some cases due to ISP throttling being bypassed.</p>
+                    </div>
+                </div>
+                
+                
+                <div class="py-6">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-lg font-medium text-slate-800">How does the 30-day money back guarantee work?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </div>
+                    <div class="mt-3 text-slate-600 hidden">
+                        <p>We offer a no-questions-asked 30-day money back guarantee on all plans. Simply contact our support team within 30 days of purchase and we'll process your full refund. No lengthy forms or complicated processes - we want you to be completely satisfied with your purchase.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to take control of your online privacy?</h2>
+            <p class="text-xl opacity-90 max-w-2xl mx-auto mb-8">Join over 2 million users worldwide who trust ShieldVPN to protect their internet freedom.</p>
+            <a href="#pricing" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-opacity-90 transition inline-block shadow-lg scroll-link">Get ShieldVPN Now — From $3.99/month</a>
+            <p class="mt-4 text-sm opacity-80">30-day money back guarantee</p>
+        </div>
+    </section>
+
+    
+    <footer class="bg-slate-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-shield-alt text-white text-xl"></i>
+                        </div>
+                        <span class="text-xl font-bold">ShieldVPN</span>
+                    </div>
+                    <p class="text-slate-400 mb-4">Protecting your digital life since 2015 with fast, reliable, and private VPN services.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-slate-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-white transition"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-slate-400 hover:text-white transition">VPN for Windows</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition">VPN for Mac</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition">VPN for iOS</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition">VPN for Android</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition">Router VPN</a></li>
+                    </ul>
+                </div>
+                
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-slate-400 hover:text-white transition">VPN Setup Guides</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition">Privacy Tools</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition">Security Center</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition">Transparency Reports</a></li>
+                    </ul>
+                </div>
+                
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-slate-400 hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition">Refund Policy</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition">Copyright</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition">DMCA</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 mt-12 pt-8 text-center text-slate-400 text-sm">
+                <p>© 2025 ShieldVPN. All rights reserved. Various trademarks held by Prabhu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.scroll-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        document.querySelectorAll('#faq div.py-6 > div').forEach(item => {
+            item.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                if (answer.classList.contains('hidden')) {
+                    answer.classList.remove('hidden');
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    answer.classList.add('hidden');
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
